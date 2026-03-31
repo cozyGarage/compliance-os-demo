@@ -55,6 +55,12 @@ const LOCALES = {
     db_reports: "Reports",
     db_assessments: "Assessments",
     db_settings: "Settings",
+    db_studio: "Studio",
+    studio_title: "Studio Assistant",
+    studio_desc: "Ask anything about your CSRD, AIFMD, or NIS2 compliance posture.",
+    studio_welcome: "Hello! I am your ComplianceOS assistant. I can help quickly analyze your current metrics, identify missing ERP data pipelines for upcoming CSRD reports, or draft policy templates for NIS2 readiness. What would you like to explore today?",
+    studio_new_btn: "New Chat",
+    studio_disclaimer: "ComplianceOS Studio can make mistakes. Always verify important regulatory outputs.",
 
     // Dashboard header
     db_title: "Dashboard",
@@ -233,6 +239,12 @@ const LOCALES = {
     db_reports: "Berichte",
     db_assessments: "Bewertungen",
     db_settings: "Einstellungen",
+    db_studio: "Studio",
+    studio_title: "Studio-Assistent",
+    studio_desc: "Fragen Sie alles über Ihre CSRD-, AIFMD- oder NIS2-Compliance-Position.",
+    studio_welcome: "Hallo! Ich bin Ihr ComplianceOS-Assistent. Ich kann helfen, Ihre aktuellen Metriken schnell zu analysieren, fehlende ERP-Datenpipelines für anstehende CSRD-Berichte zu identifizieren oder Richtlinienvorlagen für die NIS2-Bereitschaft zu entwerfen. Was möchten Sie heute untersuchen?",
+    studio_new_btn: "Neuer Chat",
+    studio_disclaimer: "ComplianceOS Studio kann Fehler machen. Überprüfen Sie wichtige regulatorische Ergebnisse immer.",
 
     // Dashboard header
     db_title: "Übersicht",
@@ -411,6 +423,12 @@ const LOCALES = {
     db_reports: "Rapports",
     db_assessments: "Évaluations",
     db_settings: "Paramètres",
+    db_studio: "Studio",
+    studio_title: "Assistant Studio",
+    studio_desc: "Demandez n'importe quoi sur votre posture de conformité CSRD, AIFMD ou NIS2.",
+    studio_welcome: "Bonjour ! Je suis votre assistant ComplianceOS. Je peux vous aider à analyser rapidement vos métriques actuelles, à identifier les pipelines de données ERP manquants pour les prochains rapports CSRD ou à rédiger des modèles de politique pour la préparation NIS2. Que souhaitez-vous explorer aujourd'hui ?",
+    studio_new_btn: "Nouveau Chat",
+    studio_disclaimer: "ComplianceOS Studio peut faire des erreurs. Vérifiez toujours les résultats réglementaires importants.",
 
     // Dashboard header
     db_title: "Tableau de bord",

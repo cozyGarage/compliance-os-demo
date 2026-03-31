@@ -408,6 +408,7 @@ function renderSidebar() {
   // Set sidebar link labels (each has an icon + <span>)
   const links = {
     'sb-dashboard':   T('db_dashboard'),
+    'sb-studio':      T('db_studio'),
     'sb-frameworks':  T('db_frameworks'),
     'sb-data-sources':T('db_data_sources'),
     'sb-reports':     T('db_reports'),
@@ -1023,6 +1024,83 @@ function initDashboard() {
   initNotifications();
   initDashboardThemeToggle();
   updateActiveLangBtns();
+  initStudioChat();
+}
+
+function initStudioChat() {
+  const input = document.getElementById('chat-input');
+  const sendBtn = document.getElementById('chat-send');
+  const history = document.getElementById('chat-history');
+  if (!input || !sendBtn || !history) return;
+
+  const setStudioLang = () => {
+    const headerTitle = document.getElementById('studio-header-title');
+    const headerDesc = document.getElementById('studio-header-desc');
+    const newBtn = document.getElementById('studio-new-btn');
+    const welcome = document.getElementById('studio-welcome');
+    const disclaimer = document.getElementById('studio-disclaimer');
+    if(headerTitle) headerTitle.textContent = T('studio_title') || 'Studio Assistant';
+    if(headerDesc) headerDesc.textContent = T('studio_desc');
+    if(newBtn) newBtn.textContent = T('studio_new_btn');
+    if(welcome) welcome.textContent = T('studio_welcome');
+    if(disclaimer) disclaimer.textContent = T('studio_disclaimer');
+  };
+  setStudioLang();
+  // Override setLocale to also update these when language changes
+  const originalSetLocale = window.setLocale;
+  window.setLocale = (lang) => {
+    if(originalSetLocale) originalSetLocale(lang);
+    setStudioLang();
+  };
+
+  const sendMessage = () => {
+    const text = input.value.trim();
+    if (!text) return;
+    
+    // Add user message
+    const div = document.createElement('div');
+    div.className = 'flex gap-4 max-w-3xl mx-auto flex-row-reverse animate-fade-in-up mt-4 mb-4';
+    div.innerHTML = `
+      <div class="w-8 h-8 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center shrink-0 mt-1 shadow-sm font-bold text-sm">U</div>
+      <div class="flex-1 text-right">
+        <p class="text-sm font-semibold text-slate-800 mb-1">You</p>
+        <div class="text-sm text-slate-800 bg-slate-100 p-4 rounded-2xl rounded-tr-none inline-block text-left border border-slate-200 shadow-sm leading-relaxed">${text}</div>
+      </div>
+    `;
+    history.appendChild(div);
+    input.value = '';
+    input.style.height = '';
+    sendBtn.disabled = true;
+    sendBtn.classList.add('cursor-not-allowed', 'opacity-50');
+    history.scrollTop = history.scrollHeight;
+
+    // Simulate assistant reply
+    setTimeout(() => {
+      const resp = document.createElement('div');
+      resp.className = 'flex gap-4 max-w-3xl mx-auto animate-fade-in-up';
+      resp.innerHTML = `
+        <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mt-1 shadow-sm">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <div class="flex-1">
+          <p class="text-sm font-semibold text-slate-800 mb-1">ComplianceOS</p>
+          <div class="text-sm text-slate-700 bg-white p-4 rounded-2xl rounded-tl-none border border-slate-200 shadow-sm leading-relaxed">
+            I understand. Based on your current data sources, we have successfully logged the relevant ERP dependencies. Let me know if you would like me to generate a gap analysis report for your upcoming assessment.
+          </div>
+        </div>
+      `;
+      history.appendChild(resp);
+      history.scrollTop = history.scrollHeight;
+    }, 1200);
+  };
+
+  sendBtn.addEventListener('click', sendMessage);
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      sendMessage();
+    }
+  });
 }
 
 /* ── Init ── */
