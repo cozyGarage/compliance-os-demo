@@ -518,3 +518,35 @@ body {
   box-shadow: 0 4px 6px rgba(16, 185, 129, 0.1);
   transform: translateY(-1px);
 }
+
+/* ── Global Dark Mode Overrides (Intercepting Light Utility Classes) ── */
+[data-theme="dark"] body.bg-slate-100 { background-color: #0B1A2B !important; }
+[data-theme="dark"] .bg-slate-100 { background-color: rgba(255,255,255,0.05) !important; }
+[data-theme="dark"] .bg-slate-50 { background-color: rgba(255,255,255,0.02) !important; }
+[data-theme="dark"] .bg-white { background-color: #112240 !important; color: #F8FAFC !important; }
+
+/* Text color inversions */
+[data-theme="dark"] .text-slate-800 { color: #F8FAFC !important; }
+[data-theme="dark"] .text-slate-700 { color: #E2E8F0 !important; }
+[data-theme="dark"] .text-slate-600 { color: #CBD5E1 !important; }
+[data-theme="dark"] .text-slate-500 { color: #94A3B8 !important; }
+[data-theme="dark"] .text-slate-400 { color: #64748B !important; }
+
+/* Borders & Dividers */
+[data-theme="dark"] .border-slate-200,
+[data-theme="dark"] .border-slate-100,
+[data-theme="dark"] .border-slate-50 { border-color: rgba(255,255,255,0.1) !important; }
+
+[data-theme="dark"] .divide-slate-100 > :not([hidden]) ~ :not([hidden]),
+[data-theme="dark"] .divide-slate-50 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgba(255,255,255,0.1) !important;
+}
+
+/* Specific component fixes for contrast */
+[data-theme="dark"] .bg-emerald-500\/10 { background-color: rgba(16,185,129,0.15) !important; }
+[data-theme="dark"] #activity-list > div:hover,
+[data-theme="dark"] .hover\:bg-slate-50:hover,
+[data-theme="dark"] .hover\:bg-slate-100:hover {
+  background-color: rgba(255,255,255,0.08) !important;
+}
+[data-theme="dark"] .shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5) !important; }

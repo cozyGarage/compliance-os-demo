@@ -33,6 +33,10 @@ function toggleTheme() {
   document.documentElement.setAttribute('data-theme', next);
   localStorage.setItem('theme', next);
   updateThemeIcons();
+  
+  // Re-draw charts to reflect new background contrast
+  if (typeof drawLineChart === 'function') drawLineChart();
+  if (typeof drawDonutCharts === 'function') drawDonutCharts();
 }
 
 function updateThemeIcons() {
@@ -929,7 +933,7 @@ function drawLineChart() {
     ctx.fill();
     ctx.beginPath();
     ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
-    ctx.fillStyle = '#ffffff';
+    ctx.fillStyle = document.documentElement.getAttribute('data-theme') === 'dark' ? '#112240' : '#ffffff';
     ctx.fill();
   });
 }
@@ -975,7 +979,7 @@ function drawDonutCharts() {
     ctx.lineCap = 'round';
     ctx.stroke();
 
-    ctx.fillStyle = '#1E293B';
+    ctx.fillStyle = document.documentElement.getAttribute('data-theme') === 'dark' ? '#F8FAFC' : '#1E293B';
     ctx.font = 'bold 14px Inter, sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
