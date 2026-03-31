@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSRD Compliance — ComplianceOS</title>
+  <meta name="description" content="Automate Corporate Sustainability Reporting Directive (CSRD) compliance. Double materiality, ESRS reporting, emissions measurement.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 600:'#234880', 700:'#1A3156', 800:'#112240', 900:'#0B1A2B' },
+            accent: { 100:'#D1FAE5', 400:'#34D399', 500:'#10B981', 600:'#059669' }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body class="bg-[#0B1A2B] text-white">
+
+  <div id="navbar"></div>
+
+  <!-- Hero -->
+  <section class="hero-gradient pt-[120px] pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="animate-on-scroll">
+          <span class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-emerald-400 text-xs font-bold uppercase tracking-wider mb-4">Sustainability Reporting</span>
+          <h1 class="text-4xl md:text-5xl font-extrabold mb-6">CSRD Compliance,<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-600">Simplified.</span></h1>
+          <p class="text-lg text-slate-400 mb-8">Automate your Corporate Sustainability Reporting Directive compliance from double materiality assessment through data collection to ESRS-aligned reporting.</p>
+          <a href="../signup.html" class="inline-flex px-8 py-3.5 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-lg transition pulse-glow">Start CSRD Assessment</a>
+        </div>
+        <div class="hidden lg:block animate-on-scroll">
+          <div class="glass-card rounded-2xl p-6">
+            <div class="text-center py-8">
+              <svg class="w-20 h-20 mx-auto text-emerald-400/50 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
+              <p class="text-2xl font-bold text-emerald-400">CSRD</p>
+              <p class="text-sm text-slate-400 mt-1">Corporate Sustainability Reporting Directive</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="bg-[#112240] py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-12">
+        <div class="lg:col-span-2 animate-on-scroll">
+          <h2 class="text-3xl font-bold mb-6">What is CSRD?</h2>
+          <p class="text-slate-400 mb-4">The Corporate Sustainability Reporting Directive (CSRD) is the EU's landmark regulation requiring companies to disclose detailed information about their environmental, social, and governance (ESG) impacts. It replaces and significantly expands the Non-Financial Reporting Directive (NFRD).</p>
+          <p class="text-slate-400">CSRD mandates reporting according to the European Sustainability Reporting Standards (ESRS), covering topics from climate change and biodiversity to workforce conditions and business conduct. Reports must be digitally tagged in XBRL format and subject to limited assurance by auditors.</p>
+        </div>
+        <div class="animate-on-scroll">
+          <div class="glass-card rounded-xl p-6 space-y-4">
+            <h3 class="font-semibold text-sm uppercase tracking-wider text-emerald-400">Key Facts</h3>
+            <div><p class="text-xs text-slate-500">Effective</p><p class="text-sm font-medium">FY 2024 (large companies)</p></div>
+            <div><p class="text-xs text-slate-500">Applies to</p><p class="text-sm font-medium">~50,000 EU companies</p></div>
+            <div><p class="text-xs text-slate-500">Standards</p><p class="text-sm font-medium">ESRS (12 standards)</p></div>
+            <div><p class="text-xs text-slate-500">Penalties</p><p class="text-sm font-medium text-red-400">Up to €10M or 5% revenue</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Challenges -->
+  <section class="bg-[#0B1A2B] py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-16 animate-on-scroll">Why CSRD Compliance is Hard</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="glass-card rounded-xl p-6 animate-on-scroll">
+          <div class="w-10 h-10 bg-red-500/10 rounded-lg flex items-center justify-center mb-4"><svg class="w-5 h-5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg></div>
+          <h3 class="font-semibold mb-2 text-sm">1,000+ Data Points</h3>
+          <p class="text-slate-400 text-xs">ESRS requires collection of over 1,000 individual data points across ESG topics.</p>
+        </div>
+        <div class="glass-card rounded-xl p-6 animate-on-scroll">
+          <div class="w-10 h-10 bg-amber-500/10 rounded-lg flex items-center justify-center mb-4"><svg class="w-5 h-5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg></div>
+          <h3 class="font-semibold mb-2 text-sm">Double Materiality</h3>
+          <p class="text-slate-400 text-xs">Companies must assess both financial and impact materiality — a complex, subjective process.</p>
+        </div>
+        <div class="glass-card rounded-xl p-6 animate-on-scroll">
+          <div class="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center mb-4"><svg class="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg></div>
+          <h3 class="font-semibold mb-2 text-sm">Scope 3 Emissions</h3>
+          <p class="text-slate-400 text-xs">Tracking supply chain emissions requires data from hundreds of suppliers — most don't have it ready.</p>
+        </div>
+        <div class="glass-card rounded-xl p-6 animate-on-scroll">
+          <div class="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center mb-4"><svg class="w-5 h-5 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <h3 class="font-semibold mb-2 text-sm">Tight Deadlines</h3>
+          <p class="text-slate-400 text-xs">Different company sizes have different deadlines. Preparation typically takes 6-12 months.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution -->
+  <section class="bg-[#112240] py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-4 animate-on-scroll">How ComplianceOS Helps</h2>
+      <p class="text-slate-400 text-center mb-16 max-w-2xl mx-auto animate-on-scroll">Our CSRD module automates every step of the compliance journey.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="glass-card rounded-xl p-8 animate-on-scroll">
+          <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg></div>
+          <h3 class="text-lg font-semibold mb-2">Double Materiality Assessment</h3>
+          <p class="text-slate-400 text-sm">Guided assessment workflow with stakeholder mapping, impact scoring, and financial materiality analysis. AI suggests material topics based on your industry.</p>
+        </div>
+        <div class="glass-card rounded-xl p-8 animate-on-scroll">
+          <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/></svg></div>
+          <h3 class="text-lg font-semibold mb-2">Data Collection Automation</h3>
+          <p class="text-slate-400 text-sm">Connect data sources, auto-map fields to ESRS requirements, validate data quality, and track completeness across all 12 standards.</p>
+        </div>
+        <div class="glass-card rounded-xl p-8 animate-on-scroll">
+          <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></div>
+          <h3 class="text-lg font-semibold mb-2">ESRS Report Generation</h3>
+          <p class="text-slate-400 text-sm">Pre-built templates for all ESRS standards (E1-E5, S1-S4, G1). Auto-populate disclosures from collected data with XBRL tagging support.</p>
+        </div>
+        <div class="glass-card rounded-xl p-8 animate-on-scroll">
+          <div class="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg></div>
+          <h3 class="text-lg font-semibold mb-2">Emissions Calculation</h3>
+          <p class="text-slate-400 text-sm">Automated Scope 1, 2, and 3 emissions calculation using AI-powered emission factor matching. Supply chain integration for value chain data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Flow -->
+  <section class="bg-[#0B1A2B] py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-16 animate-on-scroll">Your CSRD Journey</h2>
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4 animate-on-scroll">
+        <div class="text-center">
+          <div class="w-14 h-14 mx-auto bg-emerald-500/10 rounded-full flex items-center justify-center mb-3 ring-2 ring-emerald-500/30"><span class="text-emerald-400 font-bold">1</span></div>
+          <h4 class="text-sm font-semibold mb-1">Assessment</h4>
+          <p class="text-xs text-slate-500">Double materiality analysis</p>
+        </div>
+        <div class="hidden md:flex items-center justify-center"><div class="w-full h-0.5 bg-gradient-to-r from-emerald-500/30 to-emerald-500/30"></div></div>
+        <div class="text-center">
+          <div class="w-14 h-14 mx-auto bg-emerald-500/10 rounded-full flex items-center justify-center mb-3 ring-2 ring-emerald-500/30"><span class="text-emerald-400 font-bold">2</span></div>
+          <h4 class="text-sm font-semibold mb-1">Data Collection</h4>
+          <p class="text-xs text-slate-500">Connect sources & gather</p>
+        </div>
+        <div class="hidden md:flex items-center justify-center"><div class="w-full h-0.5 bg-gradient-to-r from-emerald-500/30 to-emerald-500/30"></div></div>
+        <div class="text-center">
+          <div class="w-14 h-14 mx-auto bg-emerald-500/10 rounded-full flex items-center justify-center mb-3 ring-2 ring-emerald-500/30"><span class="text-emerald-400 font-bold">3</span></div>
+          <h4 class="text-sm font-semibold mb-1">Analysis</h4>
+          <p class="text-xs text-slate-500">AI-driven gap analysis</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mt-4 animate-on-scroll">
+        <div class="md:col-start-1 text-center">
+          <div class="w-14 h-14 mx-auto bg-emerald-500/10 rounded-full flex items-center justify-center mb-3 ring-2 ring-emerald-500/30"><span class="text-emerald-400 font-bold">4</span></div>
+          <h4 class="text-sm font-semibold mb-1">Reporting</h4>
+          <p class="text-xs text-slate-500">ESRS report generation</p>
+        </div>
+        <div class="hidden md:flex items-center justify-center"><div class="w-full h-0.5 bg-gradient-to-r from-emerald-500/30 to-emerald-500/30"></div></div>
+        <div class="text-center">
+          <div class="w-14 h-14 mx-auto bg-emerald-500/10 rounded-full flex items-center justify-center mb-3 ring-2 ring-emerald-500/30"><span class="text-emerald-400 font-bold">5</span></div>
+          <h4 class="text-sm font-semibold mb-1">Submission</h4>
+          <p class="text-xs text-slate-500">Audit-ready output</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Checklist -->
+  <section class="bg-[#112240] py-24">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-16 animate-on-scroll">CSRD Compliance Checklist</h2>
+      <div class="space-y-4 animate-on-scroll">
+        <div class="checklist-item done flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">Determine reporting obligations and timeline</span></div>
+        <div class="checklist-item done flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">Conduct double materiality assessment</span></div>
+        <div class="checklist-item done flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">Map ESRS disclosure requirements</span></div>
+        <div class="checklist-item done flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">Collect environmental data (E1-E5)</span></div>
+        <div class="checklist-item flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">Collect social data (S1-S4)</span></div>
+        <div class="checklist-item flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">Collect governance data (G1)</span></div>
+        <div class="checklist-item flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">Calculate Scope 1, 2, 3 emissions</span></div>
+        <div class="checklist-item flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">Generate ESRS-aligned report</span></div>
+        <div class="checklist-item flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">XBRL digital tagging</span></div>
+        <div class="checklist-item flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">External assurance and submission</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="cta-banner"></div>
+  <div id="footer"></div>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

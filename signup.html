@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up — ComplianceOS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 600:'#234880', 700:'#1A3156', 800:'#112240', 900:'#0B1A2B' },
+            accent: { 100:'#D1FAE5', 400:'#34D399', 500:'#10B981', 600:'#059669' }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-[#0B1A2B] text-white min-h-screen">
+
+  <div id="navbar"></div>
+
+  <div class="min-h-screen pt-[72px] flex flex-col lg:flex-row">
+    <!-- Left Panel — Benefits -->
+    <div class="lg:w-3/5 hero-gradient flex items-center relative overflow-hidden">
+      <div class="absolute inset-0 opacity-[0.03]" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cpath d=&quot;M60 0H0v60&quot; fill=&quot;none&quot; stroke=&quot;white&quot; stroke-width=&quot;0.5&quot;/%3E%3C/svg%3E');"></div>
+      <div class="absolute top-1/3 right-0 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl"></div>
+
+      <div class="relative px-8 lg:px-16 py-16 max-w-2xl">
+        <a href="index.html" class="flex items-center gap-2 mb-12">
+          <svg class="w-8 h-8 text-emerald-500" fill="none" viewBox="0 0 32 32" stroke="currentColor" stroke-width="1.5">
+            <path d="M16 2L4 8v8c0 7.2 5.1 13.9 12 16 6.9-2.1 12-8.8 12-16V8L16 2z"/>
+            <path d="M11 16l3 3 7-7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="text-white font-bold text-xl">Compliance<span class="text-emerald-500">OS</span></span>
+        </a>
+
+        <h1 class="text-3xl lg:text-4xl font-extrabold mb-6">Start Your Compliance Journey</h1>
+        <p class="text-slate-400 text-lg mb-10">Join hundreds of companies automating their EU regulatory compliance with AI. Get set up in minutes.</p>
+
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-emerald-500/10 rounded-full flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold">80% Faster Compliance</h3>
+              <p class="text-slate-400 text-sm mt-1">AI automation dramatically reduces manual compliance work.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-emerald-500/10 rounded-full flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold">AI-Powered Automation</h3>
+              <p class="text-slate-400 text-sm mt-1">Machine-readable rules and intelligent data matching.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-emerald-500/10 rounded-full flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold">All EU Frameworks</h3>
+              <p class="text-slate-400 text-sm mt-1">CSRD, AIFMD, NIS2, GDPR, CSDD — one platform.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-emerald-500/10 rounded-full flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold">Enterprise Security</h3>
+              <p class="text-slate-400 text-sm mt-1">SOC 2, E2E encryption, EU-hosted data centers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Panel — Form -->
+    <div class="lg:w-2/5 bg-white flex items-center">
+      <div class="w-full px-8 lg:px-12 py-16 max-w-lg mx-auto">
+        <h2 class="text-2xl font-bold text-slate-800 mb-8">Create Your Account</h2>
+
+        <form data-ajax data-success-msg="Account created! Redirecting to dashboard..." class="space-y-5">
+          <div>
+            <label class="block text-sm font-medium text-slate-700 mb-1.5">Full Name <span class="text-red-500">*</span></label>
+            <input type="text" required placeholder="Anna Schmidt" class="form-input bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-slate-800 placeholder-slate-400 w-full">
+            <p class="error-msg hidden text-red-500 text-xs mt-1">This field is required</p>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700 mb-1.5">Work Email <span class="text-red-500">*</span></label>
+            <input type="email" required placeholder="anna@company.eu" class="form-input bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-slate-800 placeholder-slate-400 w-full">
+            <p class="error-msg hidden text-red-500 text-xs mt-1">This field is required</p>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700 mb-1.5">Company Name <span class="text-red-500">*</span></label>
+            <input type="text" required placeholder="Acme GmbH" class="form-input bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-slate-800 placeholder-slate-400 w-full">
+            <p class="error-msg hidden text-red-500 text-xs mt-1">This field is required</p>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700 mb-1.5">Company Size</label>
+            <select class="form-input bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-slate-800 w-full">
+              <option value="">Select size</option>
+              <option value="1-50">1-50 employees</option>
+              <option value="51-250">51-250 employees</option>
+              <option value="251-1000">251-1,000 employees</option>
+              <option value="1000+">1,000+ employees</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700 mb-2">Frameworks of Interest</label>
+            <div class="flex flex-wrap gap-3">
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer">
+                <input type="checkbox" value="csrd" class="w-4 h-4 rounded border-slate-300 text-emerald-500 focus:ring-emerald-500"> CSRD
+              </label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer">
+                <input type="checkbox" value="aifmd" class="w-4 h-4 rounded border-slate-300 text-emerald-500 focus:ring-emerald-500"> AIFMD
+              </label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer">
+                <input type="checkbox" value="nis2" class="w-4 h-4 rounded border-slate-300 text-emerald-500 focus:ring-emerald-500"> NIS2
+              </label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer">
+                <input type="checkbox" value="gdpr" class="w-4 h-4 rounded border-slate-300 text-emerald-500 focus:ring-emerald-500"> GDPR
+              </label>
+              <label class="flex items-center gap-2 text-sm text-slate-600 cursor-pointer">
+                <input type="checkbox" value="csdd" class="w-4 h-4 rounded border-slate-300 text-emerald-500 focus:ring-emerald-500"> CSDD
+              </label>
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700 mb-1.5">Password <span class="text-red-500">*</span></label>
+            <input type="password" required placeholder="Min. 8 characters" class="form-input bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-slate-800 placeholder-slate-400 w-full">
+            <p class="error-msg hidden text-red-500 text-xs mt-1">This field is required</p>
+          </div>
+          <div>
+            <label class="flex items-start gap-2 cursor-pointer">
+              <input type="checkbox" required class="w-4 h-4 rounded border-slate-300 text-emerald-500 focus:ring-emerald-500 mt-0.5">
+              <span class="text-xs text-slate-500">I agree to the <a href="#" class="text-emerald-600 hover:underline">Terms of Service</a> and <a href="#" class="text-emerald-600 hover:underline">Privacy Policy</a></span>
+            </label>
+          </div>
+          <button type="submit" class="w-full py-3.5 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-lg transition">Create Account</button>
+        </form>
+
+        <p class="text-center text-sm text-slate-500 mt-6">
+          Already have an account? <a href="dashboard.html" class="text-emerald-600 hover:underline font-medium">Log in</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

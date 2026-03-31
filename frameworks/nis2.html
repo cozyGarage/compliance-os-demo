@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2 Compliance — ComplianceOS</title>
+  <meta name="description" content="Automate Network and Information Security Directive 2 (NIS2) compliance. Incident response, supply chain risk, cybersecurity posture monitoring.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 600:'#234880', 700:'#1A3156', 800:'#112240', 900:'#0B1A2B' },
+            accent: { 100:'#D1FAE5', 400:'#34D399', 500:'#10B981', 600:'#059669' }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body class="bg-[#0B1A2B] text-white">
+
+  <div id="navbar"></div>
+
+  <!-- Hero -->
+  <section class="hero-gradient pt-[120px] pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="animate-on-scroll">
+          <span class="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/10 border border-amber-500/20 rounded-full text-amber-400 text-xs font-bold uppercase tracking-wider mb-4">Cybersecurity Compliance</span>
+          <h1 class="text-4xl md:text-5xl font-extrabold mb-6">NIS2 Cybersecurity<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">Compliance.</span></h1>
+          <p class="text-lg text-slate-400 mb-8">Automate NIS2 compliance with incident response workflows, supply chain risk assessment, and continuous cybersecurity posture monitoring.</p>
+          <a href="../signup.html" class="inline-flex px-8 py-3.5 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-lg transition pulse-glow">Start NIS2 Assessment</a>
+        </div>
+        <div class="hidden lg:block animate-on-scroll">
+          <div class="glass-card rounded-2xl p-6">
+            <div class="text-center py-8">
+              <svg class="w-20 h-20 mx-auto text-amber-400/50 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+              <p class="text-2xl font-bold text-amber-400">NIS2</p>
+              <p class="text-sm text-slate-400 mt-1">Network and Information Security Directive 2</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="bg-[#112240] py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-12">
+        <div class="lg:col-span-2 animate-on-scroll">
+          <h2 class="text-3xl font-bold mb-6">What is NIS2?</h2>
+          <p class="text-slate-400 mb-4">The Network and Information Security Directive 2 (NIS2) is the EU's updated cybersecurity legislation, replacing the original NIS Directive. It significantly expands the scope of sectors and entities subject to cybersecurity requirements.</p>
+          <p class="text-slate-400">NIS2 classifies entities as "essential" or "important" across 18 sectors, mandating risk management measures, incident reporting (24h early warning, 72h full notification), supply chain security, and management accountability. Non-compliance can result in fines up to €10M or 2% of global turnover.</p>
+        </div>
+        <div class="animate-on-scroll">
+          <div class="glass-card rounded-xl p-6 space-y-4">
+            <h3 class="font-semibold text-sm uppercase tracking-wider text-amber-400">Key Facts</h3>
+            <div><p class="text-xs text-slate-500">Transposition Deadline</p><p class="text-sm font-medium">October 17, 2024</p></div>
+            <div><p class="text-xs text-slate-500">Scope</p><p class="text-sm font-medium">18 sectors, ~160,000 entities</p></div>
+            <div><p class="text-xs text-slate-500">Incident Reporting</p><p class="text-sm font-medium">24h early warning, 72h notification</p></div>
+            <div><p class="text-xs text-slate-500">Penalties</p><p class="text-sm font-medium text-red-400">Up to €10M or 2% turnover</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Challenges -->
+  <section class="bg-[#0B1A2B] py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-16 animate-on-scroll">Why NIS2 Compliance is Hard</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="glass-card rounded-xl p-6 animate-on-scroll">
+          <div class="w-10 h-10 bg-red-500/10 rounded-lg flex items-center justify-center mb-4"><svg class="w-5 h-5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <h3 class="font-semibold mb-2 text-sm">24h Incident Reporting</h3>
+          <p class="text-slate-400 text-xs">Significant incidents must be reported within 24 hours — requiring rapid detection and response capabilities.</p>
+        </div>
+        <div class="glass-card rounded-xl p-6 animate-on-scroll">
+          <div class="w-10 h-10 bg-amber-500/10 rounded-lg flex items-center justify-center mb-4"><svg class="w-5 h-5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg></div>
+          <h3 class="font-semibold mb-2 text-sm">Supply Chain Security</h3>
+          <p class="text-slate-400 text-xs">Must assess and manage cybersecurity risks from suppliers and service providers across the entire supply chain.</p>
+        </div>
+        <div class="glass-card rounded-xl p-6 animate-on-scroll">
+          <div class="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center mb-4"><svg class="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg></div>
+          <h3 class="font-semibold mb-2 text-sm">Management Liability</h3>
+          <p class="text-slate-400 text-xs">C-suite and board members can be held personally liable for non-compliance — cybersecurity governance training is mandatory.</p>
+        </div>
+        <div class="glass-card rounded-xl p-6 animate-on-scroll">
+          <div class="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center mb-4"><svg class="w-5 h-5 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg></div>
+          <h3 class="font-semibold mb-2 text-sm">Technical Measures</h3>
+          <p class="text-slate-400 text-xs">Requires encryption, MFA, vulnerability management, access control, and business continuity plans across all systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution -->
+  <section class="bg-[#112240] py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-4 animate-on-scroll">How ComplianceOS Helps</h2>
+      <p class="text-slate-400 text-center mb-16 max-w-2xl mx-auto animate-on-scroll">Our NIS2 module automates cybersecurity compliance management.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="glass-card rounded-xl p-8 animate-on-scroll">
+          <div class="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg></div>
+          <h3 class="text-lg font-semibold mb-2">Incident Response Automation</h3>
+          <p class="text-slate-400 text-sm">Pre-built incident response workflows with automated 24h early warning generation and 72h notification templates. Escalation chains and evidence collection.</p>
+        </div>
+        <div class="glass-card rounded-xl p-8 animate-on-scroll">
+          <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg></div>
+          <h3 class="text-lg font-semibold mb-2">Supply Chain Risk Assessment</h3>
+          <p class="text-slate-400 text-sm">Map and assess cybersecurity risks across your supply chain. Automated vendor questionnaires, risk scoring, and continuous monitoring of supplier posture.</p>
+        </div>
+        <div class="glass-card rounded-xl p-8 animate-on-scroll">
+          <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div>
+          <h3 class="text-lg font-semibold mb-2">Posture Monitoring</h3>
+          <p class="text-slate-400 text-sm">Continuous cybersecurity posture assessment against NIS2 requirements. Gap analysis, remediation tracking, and compliance scoring dashboard.</p>
+        </div>
+        <div class="glass-card rounded-xl p-8 animate-on-scroll">
+          <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></div>
+          <h3 class="text-lg font-semibold mb-2">Regulatory Reporting</h3>
+          <p class="text-slate-400 text-sm">Automated generation of compliance documentation for national CSIRTs. Annual reporting templates and audit evidence packages.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Checklist -->
+  <section class="bg-[#0B1A2B] py-24">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-16 animate-on-scroll">NIS2 Compliance Checklist</h2>
+      <div class="space-y-4 animate-on-scroll">
+        <div class="checklist-item done flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">Determine entity classification (essential/important)</span></div>
+        <div class="checklist-item done flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">Risk analysis and information security policies</span></div>
+        <div class="checklist-item done flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">Incident handling procedures and reporting chains</span></div>
+        <div class="checklist-item flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">Business continuity and crisis management</span></div>
+        <div class="checklist-item flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">Supply chain security assessment</span></div>
+        <div class="checklist-item flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">Network and system security (encryption, MFA)</span></div>
+        <div class="checklist-item flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">Vulnerability management and disclosure</span></div>
+        <div class="checklist-item flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">Access control and asset management</span></div>
+        <div class="checklist-item flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">Management body cybersecurity training</span></div>
+        <div class="checklist-item flex items-center gap-3 p-4 bg-white/5 rounded-lg"><span class="text-sm text-slate-300">Register with national CSIRT / competent authority</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="cta-banner"></div>
+  <div id="footer"></div>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — ComplianceOS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 600:'#234880', 700:'#1A3156', 800:'#112240', 900:'#0B1A2B' },
+            accent: { 100:'#D1FAE5', 400:'#34D399', 500:'#10B981', 600:'#059669' }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-[#0B1A2B] text-white">
+
+  <div id="navbar"></div>
+
+  <!-- Hero -->
+  <section class="hero-gradient pt-[120px] pb-20 text-center">
+    <div class="max-w-3xl mx-auto px-4 animate-on-scroll">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6">About <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-600">ComplianceOS</span></h1>
+      <p class="text-lg text-slate-400">Founded in Vienna, we're building the future of regulatory compliance.</p>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="bg-[#112240] py-20">
+    <div class="max-w-4xl mx-auto px-4 animate-on-scroll">
+      <div class="border-l-4 border-emerald-500 pl-8">
+        <p class="text-xl md:text-2xl text-slate-300 italic leading-relaxed">Our mission is to democratize compliance — making it accessible, automated, and affordable for every EU enterprise. No company should face regulatory penalties because compliance was too complex or too costly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="bg-[#0B1A2B] py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="animate-on-scroll">
+          <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+          <p class="text-slate-400 mb-4">In 2023, a group of compliance professionals and AI engineers in Vienna recognized a growing problem: EU regulations were becoming increasingly complex, yet the tools available to manage them hadn't evolved beyond spreadsheets and manual processes.</p>
+          <p class="text-slate-400 mb-4">With the introduction of CSRD, NIS2, and AIFMD revisions, companies faced an unprecedented regulatory burden. Non-compliance penalties of up to 10 million EUR or 5% of yearly revenue made the stakes higher than ever.</p>
+          <p class="text-slate-400">ComplianceOS was founded with a simple premise: AI can transform how organizations approach regulatory compliance. By converting complex regulatory rules into machine-readable formats and automating data matching, we've reduced compliance lead time by 80%.</p>
+        </div>
+        <div class="animate-on-scroll">
+          <div class="glass-card rounded-2xl p-8 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/10 via-blue-500/5 to-transparent"></div>
+            <div class="relative text-center py-12">
+              <svg class="w-24 h-24 mx-auto text-emerald-500/40 mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+              <p class="text-lg font-semibold text-white">Vienna, Austria</p>
+              <p class="text-sm text-slate-400">Heart of European Innovation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="bg-[#112240] py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-16 animate-on-scroll">Our Values</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="glass-card rounded-xl p-8 animate-on-scroll">
+          <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Innovation</h3>
+          <p class="text-slate-400 text-sm">We push the boundaries of what AI can do for compliance. Continuous research and development keeps us at the forefront of RegTech.</p>
+        </div>
+        <div class="glass-card rounded-xl p-8 animate-on-scroll">
+          <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Trust</h3>
+          <p class="text-slate-400 text-sm">Security and reliability are non-negotiable. We earn trust through transparency, SOC 2 compliance, and enterprise-grade data protection.</p>
+        </div>
+        <div class="glass-card rounded-xl p-8 animate-on-scroll">
+          <div class="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Sustainability</h3>
+          <p class="text-slate-400 text-sm">We believe compliance should drive sustainable business practices. Our platform helps companies see ESG not as a burden, but as a competitive advantage.</p>
+        </div>
+        <div class="glass-card rounded-xl p-8 animate-on-scroll">
+          <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Simplicity</h3>
+          <p class="text-slate-400 text-sm">Complex regulations shouldn't require complex tools. We distill compliance into clear, actionable steps that any team can follow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="bg-[#0B1A2B] py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-16 animate-on-scroll">The Team</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center animate-on-scroll">
+          <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center text-2xl font-bold mb-4">SR</div>
+          <h3 class="font-semibold">Sebastian R.</h3>
+          <p class="text-emerald-400 text-sm mb-2">CEO & Co-Founder</p>
+          <p class="text-slate-500 text-xs">Former compliance lead at a Big 4 firm. Bocconi MBA.</p>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-2xl font-bold mb-4">AK</div>
+          <h3 class="font-semibold">Anna K.</h3>
+          <p class="text-blue-400 text-sm mb-2">CTO</p>
+          <p class="text-slate-500 text-xs">AI/ML researcher. Ex-Google. PhD in NLP from TU Wien.</p>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center text-2xl font-bold mb-4">MW</div>
+          <h3 class="font-semibold">Markus W.</h3>
+          <p class="text-amber-400 text-sm mb-2">Head of Compliance</p>
+          <p class="text-slate-500 text-xs">15 years in EU regulatory affairs. CSRD domain expert.</p>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center text-2xl font-bold mb-4">EM</div>
+          <h3 class="font-semibold">Elena M.</h3>
+          <p class="text-purple-400 text-sm mb-2">Head of Product</p>
+          <p class="text-slate-500 text-xs">Product leader from the enterprise SaaS space. Ex-SAP.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="bg-[#112240] py-24">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-16 animate-on-scroll">Our Journey</h2>
+      <div class="relative border-l-2 border-emerald-500/30 ml-4 space-y-12">
+        <div class="relative pl-8 animate-on-scroll">
+          <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-[#112240]"></div>
+          <span class="inline-block px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-bold rounded-full mb-2">2023</span>
+          <h3 class="font-semibold text-lg">Founded in Vienna</h3>
+          <p class="text-slate-400 text-sm mt-1">ComplianceOS is born from the idea that AI can revolutionize regulatory compliance for EU enterprises.</p>
+        </div>
+        <div class="relative pl-8 animate-on-scroll">
+          <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-[#112240]"></div>
+          <span class="inline-block px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-bold rounded-full mb-2">2024</span>
+          <h3 class="font-semibold text-lg">Seed Funding Secured</h3>
+          <p class="text-slate-400 text-sm mt-1">Raised seed round to build out the platform and grow the team. First enterprise pilot customers onboarded.</p>
+        </div>
+        <div class="relative pl-8 animate-on-scroll">
+          <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-[#112240]"></div>
+          <span class="inline-block px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-bold rounded-full mb-2">2025</span>
+          <h3 class="font-semibold text-lg">Platform Launch</h3>
+          <p class="text-slate-400 text-sm mt-1">Full platform launch with CSRD, AIFMD, and NIS2 modules. 50+ companies across the DACH region onboarded.</p>
+        </div>
+        <div class="relative pl-8 animate-on-scroll">
+          <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-emerald-400/50 border-2 border-[#112240]"></div>
+          <span class="inline-block px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-bold rounded-full mb-2">2026</span>
+          <h3 class="font-semibold text-lg">European Expansion</h3>
+          <p class="text-slate-400 text-sm mt-1">Expanding across Europe with GDPR and CSDD modules. Series A planned for Q3.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="cta-banner"></div>
+  <div id="footer"></div>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

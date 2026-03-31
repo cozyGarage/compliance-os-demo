@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features — ComplianceOS</title>
+  <meta name="description" content="Explore ComplianceOS features: intelligent automation, machine-readable rules, data consolidation, AI insights, emissions measurement, and enterprise security.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 600:'#234880', 700:'#1A3156', 800:'#112240', 900:'#0B1A2B' },
+            accent: { 100:'#D1FAE5', 400:'#34D399', 500:'#10B981', 600:'#059669' }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-[#0B1A2B] text-white">
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Page Hero -->
+  <section class="hero-gradient py-32 pt-[120px]">
+    <div class="max-w-4xl mx-auto px-6 text-center animate-on-scroll">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+        Everything You Need for <span class="text-accent-400">EU Compliance</span>
+      </h1>
+      <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto">
+        A modular platform that adapts to your compliance journey. Pick the capabilities you need today, and scale as regulations evolve.
+      </p>
+    </div>
+  </section>
+
+  <!-- Feature 1: Intelligent Automation -->
+  <section class="bg-[#0B1A2B] py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center animate-on-scroll">
+        <!-- Text -->
+        <div>
+          <h3 class="text-3xl md:text-4xl font-bold mb-4">Intelligent Automation</h3>
+          <p class="text-slate-300 text-lg mb-8">
+            Let AI handle the repetitive work so your team can focus on strategy. Smart workflows route tasks, classify documents, and trigger actions automatically.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-slate-200">AI-powered task routing eliminates manual triage across teams</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-slate-200">Smart workflows adapt to regulatory changes in real time</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-slate-200">Auto-classification of documents, evidence, and data points</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Visual -->
+        <div class="relative">
+          <div class="bg-gradient-to-br from-accent-500/20 to-navy-700/40 rounded-2xl border border-accent-500/20 p-10 aspect-square flex items-center justify-center overflow-hidden">
+            <!-- Lightning bolt + workflow lines -->
+            <svg class="w-48 h-48 text-accent-400 opacity-80" viewBox="0 0 200 200" fill="none">
+              <path d="M100 20L60 100h30L70 180l80-100h-35L100 20z" fill="currentColor" opacity="0.3"/>
+              <path d="M100 20L60 100h30L70 180l80-100h-35L100 20z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <!-- Workflow nodes -->
+              <circle cx="30" cy="60" r="8" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+              <circle cx="170" cy="60" r="8" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+              <circle cx="30" cy="140" r="8" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+              <circle cx="170" cy="140" r="8" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+              <line x1="38" y1="60" x2="65" y2="85" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+              <line x1="162" y1="60" x2="135" y2="85" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+              <line x1="38" y1="140" x2="75" y2="120" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+              <line x1="162" y1="140" x2="125" y2="120" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+            </svg>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0B1A2B]/60 to-transparent rounded-2xl"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 2: Machine-Readable Rules (reversed) -->
+  <section class="bg-[#112240] py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center animate-on-scroll">
+        <!-- Visual (first on large screens) -->
+        <div class="order-2 lg:order-1 relative">
+          <div class="bg-gradient-to-br from-navy-600/40 to-accent-500/10 rounded-2xl border border-accent-500/15 p-8 aspect-square flex items-center justify-center overflow-hidden">
+            <!-- Code-like display -->
+            <div class="w-full space-y-3 font-mono text-sm">
+              <div class="flex items-center gap-2 mb-6">
+                <div class="w-3 h-3 rounded-full bg-red-400/60"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-400/60"></div>
+                <div class="w-3 h-3 rounded-full bg-accent-400/60"></div>
+              </div>
+              <div class="text-accent-400/70">// CSRD Article 19a</div>
+              <div><span class="text-purple-400">rule</span> <span class="text-accent-400">sustainability_report</span> {</div>
+              <div class="pl-4"><span class="text-slate-400">scope:</span> <span class="text-yellow-300">"large_undertakings"</span></div>
+              <div class="pl-4"><span class="text-slate-400">threshold:</span> <span class="text-accent-300">500</span> <span class="text-slate-500">employees</span></div>
+              <div class="pl-4"><span class="text-slate-400">frequency:</span> <span class="text-yellow-300">"annual"</span></div>
+              <div class="pl-4"><span class="text-slate-400">standard:</span> <span class="text-yellow-300">"ESRS"</span></div>
+              <div>}</div>
+              <div class="mt-4 text-accent-400/70">// Auto-matched: 12 obligations</div>
+              <div class="text-accent-400/70">// Version: 2025.3.1</div>
+            </div>
+          </div>
+        </div>
+        <!-- Text -->
+        <div class="order-1 lg:order-2">
+          <h3 class="text-3xl md:text-4xl font-bold mb-4">Machine-Readable Rules</h3>
+          <p class="text-slate-300 text-lg mb-8">
+            Transform dense regulatory text into structured, actionable data. Our rule engine matches obligations to your operations and tracks every version change.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-slate-200">Regulatory text parsed into structured, machine-readable formats</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-slate-200">Intelligent rule-matching engine maps obligations to your entity</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-slate-200">Full version tracking with diff views for every regulatory update</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 3: Data Consolidation -->
+  <section class="bg-[#0B1A2B] py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center animate-on-scroll">
+        <!-- Text -->
+        <div>
+          <h3 class="text-3xl md:text-4xl font-bold mb-4">Data Consolidation</h3>
+          <p class="text-slate-300 text-lg mb-8">
+            Pull data from every corner of your organisation into one unified model. Spreadsheets, APIs, PDFs, and legacy systems all feed into a single source of truth.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-slate-200">Multi-source ingestion from spreadsheets, APIs, and documents</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-slate-200">Automated data validation and anomaly detection at ingestion</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-slate-200">Unified data model ensures consistency across all reporting</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Visual -->
+        <div class="relative">
+          <div class="bg-gradient-to-br from-accent-500/15 to-navy-800/60 rounded-2xl border border-accent-500/15 p-10 aspect-square flex items-center justify-center overflow-hidden">
+            <!-- Data pipes converging -->
+            <svg class="w-48 h-48" viewBox="0 0 200 200" fill="none">
+              <!-- Source nodes -->
+              <rect x="10" y="20" width="40" height="24" rx="4" stroke="#34D399" stroke-width="1.5" opacity="0.6"/>
+              <text x="30" y="36" text-anchor="middle" fill="#34D399" font-size="8" opacity="0.7">XLS</text>
+              <rect x="150" y="20" width="40" height="24" rx="4" stroke="#34D399" stroke-width="1.5" opacity="0.6"/>
+              <text x="170" y="36" text-anchor="middle" fill="#34D399" font-size="8" opacity="0.7">API</text>
+              <rect x="10" y="156" width="40" height="24" rx="4" stroke="#34D399" stroke-width="1.5" opacity="0.6"/>
+              <text x="30" y="172" text-anchor="middle" fill="#34D399" font-size="8" opacity="0.7">PDF</text>
+              <rect x="150" y="156" width="40" height="24" rx="4" stroke="#34D399" stroke-width="1.5" opacity="0.6"/>
+              <text x="170" y="172" text-anchor="middle" fill="#34D399" font-size="8" opacity="0.7">CSV</text>
+              <!-- Converging lines -->
+              <path d="M50 32 L85 90" stroke="#34D399" stroke-width="1.5" opacity="0.4"/>
+              <path d="M150 32 L115 90" stroke="#34D399" stroke-width="1.5" opacity="0.4"/>
+              <path d="M50 168 L85 110" stroke="#34D399" stroke-width="1.5" opacity="0.4"/>
+              <path d="M150 168 L115 110" stroke="#34D399" stroke-width="1.5" opacity="0.4"/>
+              <!-- Central hub -->
+              <circle cx="100" cy="100" r="24" fill="#34D399" opacity="0.15" stroke="#34D399" stroke-width="2"/>
+              <circle cx="100" cy="100" r="10" fill="#34D399" opacity="0.3"/>
+              <!-- Pulse rings -->
+              <circle cx="100" cy="100" r="36" stroke="#34D399" stroke-width="0.5" opacity="0.2"/>
+              <circle cx="100" cy="100" r="48" stroke="#34D399" stroke-width="0.5" opacity="0.1"/>
+            </svg>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0B1A2B]/50 to-transparent rounded-2xl"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 4: AI Insights & Prediction (reversed) -->
+  <section class="bg-[#112240] py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center animate-on-scroll">
+        <!-- Visual (first on large screens) -->
+        <div class="order-2 lg:order-1 relative">
+          <div class="bg-gradient-to-br from-navy-600/40 to-accent-500/10 rounded-2xl border border-accent-500/15 p-10 aspect-square flex items-center justify-center overflow-hidden">
+            <!-- Chart + brain imagery -->
+            <svg class="w-48 h-48" viewBox="0 0 200 200" fill="none">
+              <!-- Chart bars -->
+              <rect x="30" y="130" width="16" height="40" rx="2" fill="#34D399" opacity="0.3"/>
+              <rect x="54" y="110" width="16" height="60" rx="2" fill="#34D399" opacity="0.4"/>
+              <rect x="78" y="90" width="16" height="80" rx="2" fill="#34D399" opacity="0.5"/>
+              <rect x="102" y="70" width="16" height="100" rx="2" fill="#34D399" opacity="0.6"/>
+              <rect x="126" y="100" width="16" height="70" rx="2" fill="#34D399" opacity="0.4"/>
+              <rect x="150" y="60" width="16" height="110" rx="2" fill="#34D399" opacity="0.7"/>
+              <!-- Trend line -->
+              <path d="M38 128 L62 108 L86 88 L110 68 L134 78 L158 55" stroke="#34D399" stroke-width="2.5" stroke-linecap="round"/>
+              <!-- Prediction zone (dashed) -->
+              <path d="M158 55 L180 40" stroke="#34D399" stroke-width="2" stroke-dasharray="4 3" opacity="0.6"/>
+              <!-- Brain icon top-right -->
+              <circle cx="160" cy="35" r="16" stroke="#34D399" stroke-width="1.5" opacity="0.5"/>
+              <path d="M153 35 C153 28 160 24 164 28 C168 24 175 28 175 35 C175 42 164 48 164 48 C164 48 153 42 153 35z" stroke="#34D399" stroke-width="1" opacity="0.4" fill="none"/>
+              <!-- Axis -->
+              <line x1="22" y1="172" x2="180" y2="172" stroke="#94A3B8" stroke-width="0.5" opacity="0.3"/>
+              <line x1="22" y1="40" x2="22" y2="172" stroke="#94A3B8" stroke-width="0.5" opacity="0.3"/>
+            </svg>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#112240]/50 to-transparent rounded-2xl"></div>
+          </div>
+        </div>
+        <!-- Text -->
+        <div class="order-1 lg:order-2">
+          <h3 class="text-3xl md:text-4xl font-bold mb-4">AI Insights & Prediction</h3>
+          <p class="text-slate-300 text-lg mb-8">
+            Go beyond reporting with predictive analytics. Surface trends before they become risks, and get AI-driven recommendations to stay ahead of compliance gaps.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-slate-200">Trend analysis surfaces emerging risks across your portfolio</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-slate-200">Dynamic risk scoring prioritises where to focus resources</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-slate-200">Predictive compliance modelling to anticipate future obligations</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 5: Emissions Measurement -->
+  <section class="bg-[#0B1A2B] py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center animate-on-scroll">
+        <!-- Text -->
+        <div>
+          <h3 class="text-3xl md:text-4xl font-bold mb-4">Emissions Measurement</h3>
+          <p class="text-slate-300 text-lg mb-8">
+            Measure, track, and report greenhouse gas emissions across all scopes. Automated calculations aligned with GHG Protocol and ready for CSRD disclosure.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-slate-200">Full Scope 1, 2, and 3 emissions tracking in one place</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-slate-200">Automated calculations using latest emission factor databases</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-slate-200">CSRD-ready output aligned with ESRS E1 climate standards</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Visual -->
+        <div class="relative">
+          <div class="bg-gradient-to-br from-accent-500/15 to-navy-800/60 rounded-2xl border border-accent-500/15 p-10 aspect-square flex items-center justify-center overflow-hidden">
+            <!-- Globe with measurement -->
+            <svg class="w-48 h-48" viewBox="0 0 200 200" fill="none">
+              <!-- Globe -->
+              <circle cx="100" cy="100" r="60" stroke="#34D399" stroke-width="1.5" opacity="0.5"/>
+              <ellipse cx="100" cy="100" rx="30" ry="60" stroke="#34D399" stroke-width="1" opacity="0.3"/>
+              <ellipse cx="100" cy="100" rx="60" ry="30" stroke="#34D399" stroke-width="1" opacity="0.3"/>
+              <!-- Latitude lines -->
+              <ellipse cx="100" cy="80" rx="56" ry="12" stroke="#34D399" stroke-width="0.5" opacity="0.2"/>
+              <ellipse cx="100" cy="120" rx="56" ry="12" stroke="#34D399" stroke-width="0.5" opacity="0.2"/>
+              <!-- Measurement markers -->
+              <circle cx="80" cy="75" r="4" fill="#34D399" opacity="0.6"/>
+              <circle cx="120" cy="90" r="4" fill="#34D399" opacity="0.4"/>
+              <circle cx="95" cy="115" r="4" fill="#34D399" opacity="0.5"/>
+              <!-- Measurement arc -->
+              <path d="M160 40 A80 80 0 0 1 160 160" stroke="#34D399" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+              <!-- Gauge ticks -->
+              <line x1="168" y1="60" x2="175" y2="60" stroke="#34D399" stroke-width="1.5" opacity="0.5"/>
+              <line x1="172" y1="80" x2="178" y2="80" stroke="#34D399" stroke-width="1.5" opacity="0.5"/>
+              <line x1="174" y1="100" x2="182" y2="100" stroke="#34D399" stroke-width="2" opacity="0.6"/>
+              <line x1="172" y1="120" x2="178" y2="120" stroke="#34D399" stroke-width="1.5" opacity="0.5"/>
+              <line x1="168" y1="140" x2="175" y2="140" stroke="#34D399" stroke-width="1.5" opacity="0.5"/>
+              <!-- CO2 label -->
+              <text x="100" y="195" text-anchor="middle" fill="#34D399" font-size="10" opacity="0.6" font-weight="600">CO2e</text>
+            </svg>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0B1A2B]/50 to-transparent rounded-2xl"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 6: CSRD Reporting Module (reversed) -->
+  <section class="bg-[#112240] py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center animate-on-scroll">
+        <!-- Visual (first on large screens) -->
+        <div class="order-2 lg:order-1 relative">
+          <div class="bg-gradient-to-br from-navy-600/40 to-accent-500/10 rounded-2xl border border-accent-500/15 p-10 aspect-square flex items-center justify-center overflow-hidden">
+            <!-- Report document -->
+            <svg class="w-44 h-44" viewBox="0 0 200 200" fill="none">
+              <!-- Document shape -->
+              <rect x="45" y="20" width="110" height="150" rx="6" stroke="#34D399" stroke-width="1.5" opacity="0.5" fill="#34D399" fill-opacity="0.05"/>
+              <!-- Folded corner -->
+              <path d="M125 20 L155 20 L155 50 Z" fill="#34D399" opacity="0.1"/>
+              <path d="M125 20 L125 50 L155 50" stroke="#34D399" stroke-width="1.5" opacity="0.4"/>
+              <!-- Content lines -->
+              <rect x="60" y="40" width="50" height="4" rx="2" fill="#34D399" opacity="0.4"/>
+              <rect x="60" y="52" width="70" height="3" rx="1.5" fill="#94A3B8" opacity="0.2"/>
+              <rect x="60" y="60" width="65" height="3" rx="1.5" fill="#94A3B8" opacity="0.2"/>
+              <!-- Checkboxes -->
+              <rect x="60" y="78" width="10" height="10" rx="2" stroke="#34D399" stroke-width="1.5" opacity="0.5"/>
+              <path d="M62 83 L65 86 L69 80" stroke="#34D399" stroke-width="1.5" opacity="0.7"/>
+              <rect x="76" y="80" width="55" height="3" rx="1.5" fill="#94A3B8" opacity="0.2"/>
+              <rect x="60" y="96" width="10" height="10" rx="2" stroke="#34D399" stroke-width="1.5" opacity="0.5"/>
+              <path d="M62 101 L65 104 L69 98" stroke="#34D399" stroke-width="1.5" opacity="0.7"/>
+              <rect x="76" y="98" width="50" height="3" rx="1.5" fill="#94A3B8" opacity="0.2"/>
+              <rect x="60" y="114" width="10" height="10" rx="2" stroke="#34D399" stroke-width="1.5" opacity="0.5"/>
+              <path d="M62 119 L65 122 L69 116" stroke="#34D399" stroke-width="1.5" opacity="0.7"/>
+              <rect x="76" y="116" width="60" height="3" rx="1.5" fill="#94A3B8" opacity="0.2"/>
+              <!-- Submit button -->
+              <rect x="60" y="138" width="80" height="18" rx="4" fill="#34D399" opacity="0.3" stroke="#34D399" stroke-width="1"/>
+              <text x="100" y="150" text-anchor="middle" fill="#34D399" font-size="8" font-weight="600">SUBMIT REPORT</text>
+              <!-- ESRS badge -->
+              <rect x="55" y="178" width="90" height="16" rx="8" stroke="#34D399" stroke-width="1" opacity="0.4"/>
+              <text x="100" y="189" text-anchor="middle" fill="#34D399" font-size="7" opacity="0.6">ESRS COMPLIANT</text>
+            </svg>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#112240]/50 to-transparent rounded-2xl"></div>
+          </div>
+        </div>
+        <!-- Text -->
+        <div class="order-1 lg:order-2">
+          <h3 class="text-3xl md:text-4xl font-bold mb-4">CSRD Reporting Module</h3>
+          <p class="text-slate-300 text-lg mb-8">
+            Generate audit-ready CSRD reports from your data. Built-in double materiality assessment, ESRS templates, and one-click submission to regulators.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-slate-200">Guided double materiality assessment with stakeholder mapping</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-slate-200">Pre-built ESRS templates covering all disclosure requirements</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-accent-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-slate-200">One-click export and submission in XHTML and ESEF formats</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integration Section -->
+  <section class="bg-[#112240] py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 animate-on-scroll">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Connects With Your Existing Tools</h2>
+        <p class="text-slate-300 text-lg max-w-2xl mx-auto">
+          Seamless integrations mean you never have to rip and replace. ComplianceOS fits into your current tech stack.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 animate-on-scroll">
+        <!-- Excel -->
+        <div class="glass-card p-6 text-center rounded-xl">
+          <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
+            <svg class="w-10 h-10 text-accent-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M12 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M21.375 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125M12 17.25v-5.625m0 5.625c0 .621.504 1.125 1.125 1.125h2.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125M12 17.25c0 .621-.504 1.125-1.125 1.125H8.625c-.621 0-1.125-.504-1.125-1.125v-1.5c0-.621.504-1.125 1.125-1.125"/>
+            </svg>
+          </div>
+          <span class="text-sm font-medium text-slate-200">Excel</span>
+        </div>
+        <!-- SAP -->
+        <div class="glass-card p-6 text-center rounded-xl">
+          <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
+            <svg class="w-10 h-10 text-accent-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"/>
+            </svg>
+          </div>
+          <span class="text-sm font-medium text-slate-200">SAP</span>
+        </div>
+        <!-- REST API -->
+        <div class="glass-card p-6 text-center rounded-xl">
+          <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
+            <svg class="w-10 h-10 text-accent-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/>
+            </svg>
+          </div>
+          <span class="text-sm font-medium text-slate-200">REST API</span>
+        </div>
+        <!-- CSV -->
+        <div class="glass-card p-6 text-center rounded-xl">
+          <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
+            <svg class="w-10 h-10 text-accent-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>
+            </svg>
+          </div>
+          <span class="text-sm font-medium text-slate-200">CSV</span>
+        </div>
+        <!-- PDF -->
+        <div class="glass-card p-6 text-center rounded-xl">
+          <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
+            <svg class="w-10 h-10 text-accent-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>
+            </svg>
+          </div>
+          <span class="text-sm font-medium text-slate-200">PDF</span>
+        </div>
+        <!-- Salesforce -->
+        <div class="glass-card p-6 text-center rounded-xl">
+          <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
+            <svg class="w-10 h-10 text-accent-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z"/>
+            </svg>
+          </div>
+          <span class="text-sm font-medium text-slate-200">Salesforce</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security Section -->
+  <section class="bg-[#0B1A2B] py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 animate-on-scroll">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Enterprise-Grade Security</h2>
+        <p class="text-slate-300 text-lg max-w-2xl mx-auto">
+          Your compliance data deserves the highest level of protection. ComplianceOS is built with security at every layer.
+        </p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 animate-on-scroll">
+        <!-- SOC 2 -->
+        <div class="bg-navy-800/50 border border-slate-700/50 rounded-xl p-8 text-center hover:border-accent-500/30 transition-colors">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-accent-500/10 flex items-center justify-center">
+            <svg class="w-7 h-7 text-accent-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+            </svg>
+          </div>
+          <h4 class="text-lg font-semibold mb-2">SOC 2 Type II</h4>
+          <p class="text-sm text-slate-400">Independently audited controls for security, availability, and confidentiality.</p>
+        </div>
+        <!-- GDPR -->
+        <div class="bg-navy-800/50 border border-slate-700/50 rounded-xl p-8 text-center hover:border-accent-500/30 transition-colors">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-accent-500/10 flex items-center justify-center">
+            <svg class="w-7 h-7 text-accent-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/>
+            </svg>
+          </div>
+          <h4 class="text-lg font-semibold mb-2">GDPR Compliant</h4>
+          <p class="text-sm text-slate-400">Full data protection compliance with EU-based hosting and processing.</p>
+        </div>
+        <!-- Encryption -->
+        <div class="bg-navy-800/50 border border-slate-700/50 rounded-xl p-8 text-center hover:border-accent-500/30 transition-colors">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-accent-500/10 flex items-center justify-center">
+            <svg class="w-7 h-7 text-accent-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/>
+            </svg>
+          </div>
+          <h4 class="text-lg font-semibold mb-2">End-to-End Encryption</h4>
+          <p class="text-sm text-slate-400">AES-256 encryption at rest and TLS 1.3 in transit for all data.</p>
+        </div>
+        <!-- SSO/SAML -->
+        <div class="bg-navy-800/50 border border-slate-700/50 rounded-xl p-8 text-center hover:border-accent-500/30 transition-colors">
+          <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-accent-500/10 flex items-center justify-center">
+            <svg class="w-7 h-7 text-accent-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z"/>
+            </svg>
+          </div>
+          <h4 class="text-lg font-semibold mb-2">SSO / SAML</h4>
+          <p class="text-sm text-slate-400">Enterprise single sign-on with SAML 2.0, OIDC, and MFA support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <div id="cta-banner"></div>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
